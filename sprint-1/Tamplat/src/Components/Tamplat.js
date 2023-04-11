@@ -40,8 +40,7 @@ const Tamplat = ({el,  tamplatdata, setTamplatdata}) => {
       <div className='note-foot'>
       <small>15/08/2023</small>
 
-      {/* <button id={el.id} onClick={(e)=> handleButtonClick('chapter',e)} 
-className="btn btn-primary btn-sm">Add Chapter</button> */}
+     
       
       <button className='deletet' onClick={() => hendleDelete(el.id)}><MdDeleteForever className="delete-icon" size="1.3em"/></button>
         

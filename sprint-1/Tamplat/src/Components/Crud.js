@@ -76,8 +76,7 @@ function EditList ({cur, lists, setLists}) {
             
         })
         setLists(newlist)
-        // const heading=event.target.heading;
-        // const task=event.target.task;
+        
     }
     const handInputheading = (event) => {
         const value= event.target.value;

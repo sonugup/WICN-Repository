@@ -37,7 +37,7 @@ const Crud = () => {
         })
     }
     </form>
-</div>
+    </div>
     </div>
   )
 

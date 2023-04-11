@@ -41,7 +41,6 @@ const CreateTamplat = () => {
       })
     }
 
- 
     useEffect(()=> {
       localStorage.setItem("temlate", JSON.stringify(tamplatdata))
     }, [tamplatdata])

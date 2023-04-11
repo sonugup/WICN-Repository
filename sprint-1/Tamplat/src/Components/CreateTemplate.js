@@ -25,7 +25,7 @@ const CreateTamplat = () => {
       setTname(e.target.value)
     }
     }
-    // console.log(tamplatdata)
+    
     const addTamplatHandle = (e) => {
       e.preventDefault();
 

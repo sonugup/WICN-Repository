@@ -80,11 +80,7 @@ const EditeTable = () => {
         //     task:"task",
         //     note:"note",
         //     render:(text, record) => {
-        //         if(editT===record.key){
-        //             
-        //         }else{
-        //             return <p>{text}</p>
-        //         }
+        //         
         //     }
         // },
         {

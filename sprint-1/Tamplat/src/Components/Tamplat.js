@@ -8,13 +8,7 @@ import Crud from './Crud';
 
 const Tamplat = ({el,  tamplatdata, setTamplatdata}) => {
   // console.log(el.length)
-  useEffect(() => {
-    const json = localStorage.getItem("notes");
-    const savedNotes = JSON.parse(json);
-    if (savedNotes) {
-      setTamplatdata(savedNotes);
-    }
-  }, [tamplatdata]);
+ 
 
 
 

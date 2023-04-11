@@ -21,9 +21,7 @@ const Tamplat = ({el,  tamplatdata, setTamplatdata}) => {
 // }
 // const coursebtn = localStorage.getItem("btncourseId")
 
-// useEffect(() => {
-//   coursebtn
-// })
+
 
   return (
     <div className='temp'>

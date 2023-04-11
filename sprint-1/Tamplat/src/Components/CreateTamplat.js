@@ -13,7 +13,6 @@ const handleButtonClick = () => {
  }
 const CreateTamplat = () => {
   
-
     const [tname, setTname] = useState('')
     const [title, setTitle] = useState('')
 

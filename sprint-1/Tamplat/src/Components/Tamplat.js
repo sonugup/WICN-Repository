@@ -18,8 +18,6 @@ const Tamplat = ({el,  tamplatdata, setTamplatdata}) => {
 
 
 
-
-
   return (
     <div className='temp'>
       <div className='namediv'>

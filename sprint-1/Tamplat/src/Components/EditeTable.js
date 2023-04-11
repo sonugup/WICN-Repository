@@ -79,9 +79,7 @@ const EditeTable = () => {
         //     heading:"heading",
         //     task:"task",
         //     note:"note",
-        //     render:(text, record) => {
-        //         
-        //     }
+        //     
         // },
         {
             heading:"heading",

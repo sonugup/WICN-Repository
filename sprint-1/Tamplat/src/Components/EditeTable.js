@@ -83,12 +83,7 @@ const EditeTable = () => {
         //         if(editT===record.key){
         //             return <div 
         //             name="heading"
-        //             rules = {[
-        //                 {
-        //                     required:true,
-        //                     massage:"please enter your address"
-        //                 }
-        //             ]}
+        //            
         //             >
         //             <input/>
         //             </div>

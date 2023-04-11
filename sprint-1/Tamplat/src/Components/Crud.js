@@ -65,7 +65,6 @@ const Crud = () => {
 }
 
 
-
 function EditList ({cur, lists, setLists}) {
 
      const handInputhead = (event) =>{

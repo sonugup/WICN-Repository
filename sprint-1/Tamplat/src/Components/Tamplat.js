@@ -15,10 +15,7 @@ const Tamplat = ({el,  tamplatdata, setTamplatdata}) => {
       setTamplatdata(savedNotes);
     }
   }, [tamplatdata]);
-//   const handleButtonClick = (button, event) => {
-//     setTamplatdata(button)
-//     localStorage.setItem("btncourseId", event.target.id)
-// }
+
 
 
 

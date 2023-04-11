@@ -75,12 +75,7 @@ const EditeTable = () => {
                 }
             }
         },
-        // {
-        //     heading:"heading",
-        //     task:"task",
-        //     note:"note",
-        //     
-        // },
+        
         {
             heading:"heading",
             render:(_, record) => {

@@ -70,8 +70,6 @@ const CreateTamplat = () => {
         })
       }
       </div>
-
-      
     </div>
   )
 }

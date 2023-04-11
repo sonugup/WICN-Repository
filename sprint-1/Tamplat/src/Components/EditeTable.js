@@ -81,8 +81,7 @@ const EditeTable = () => {
         //     note:"note",
         //     render:(text, record) => {
         //         if(editT===record.key){
-        //             return <div 
-        //             nam
+        //             
         //         }else{
         //             return <p>{text}</p>
         //         }

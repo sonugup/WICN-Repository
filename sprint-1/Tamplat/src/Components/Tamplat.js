@@ -19,7 +19,7 @@ const Tamplat = ({el,  tamplatdata, setTamplatdata}) => {
 //     setTamplatdata(button)
 //     localStorage.setItem("btncourseId", event.target.id)
 // }
-// const coursebtn = localStorage.getItem("btncourseId")
+
 
 
 

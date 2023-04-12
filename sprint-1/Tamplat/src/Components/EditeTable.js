@@ -96,15 +96,7 @@ const EditeTable = () => {
         columns={columns}
         datasour={datasour}
         />
-      {/* <form className='form'>
-        <input type='text' placeholder='heading'/>
-        <input type='text' placeholder='task'/>
-        
-        <input type='text' placeholder='notes'/>
-        <button className='btn'>add heding</button>
-        <button className='btn'>add task</button>
-        <button className='btn'>add no</button>
-      </form> */}
+     
     </div>
   )
 }

@@ -17,7 +17,6 @@ const EditeTable = () => {
 
     },[])
 
-
     const columns = [
         {
             heading:"heading",

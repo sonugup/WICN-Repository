@@ -5,7 +5,7 @@ import Table from './Table';
 const EditeTable = () => {
     const [datasour, setDatasour] = useState([]);
     const [editT, setEditT] = useState(null)
-    // console.log(ele.length)
+
     useEffect(() => {
         const data= [];
         data.push({

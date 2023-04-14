@@ -14,7 +14,6 @@ const EditeTable = () => {
             note:"notes"
         })
         setDatasour(data)
-
     },[])
 
     const columns = [

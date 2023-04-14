@@ -94,7 +94,6 @@ const EditeTable = () => {
         columns={columns}
         datasour={datasour}
         />
-     
     </div>
   )
 }

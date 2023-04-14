@@ -87,7 +87,6 @@ const EditeTable = () => {
             }
         },
     ]
-
   return (
     <div>
         <Table 

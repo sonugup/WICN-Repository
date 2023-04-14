@@ -74,7 +74,7 @@ const EditeTable = () => {
                 }
             }
         },
-        {
+       {
             heading:"heading",
             render:(_, record) => {
                 return(

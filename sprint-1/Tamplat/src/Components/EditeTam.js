@@ -33,17 +33,6 @@ function EditableCell({ value, onChange }) {
     
   ];
 
-  function EditeTam() {
-    const [data, setData] = React.useState(initialData);
-
-    const handleDataChange = (newData) => {
-      setData(newData);
-    };
-    console.log(data)
-
-    return (
-      <EditableTable data={data} onChange={handleDataChange} />
-    );
 
   }
 

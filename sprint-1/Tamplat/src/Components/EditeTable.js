@@ -10,12 +10,6 @@ const EditeTable = () => {
     
     useEffect(() => {
         const data= [];
-        data.push({
-            heading:"heading",
-            task:"task",
-            note:"notes"
-        })
-        setDatasour(data)
     },[])
 
     const columns = [

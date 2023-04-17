@@ -11,12 +11,7 @@ function EditableCell({ value, onChange }) {
     );
   }
 
-  function EditableRow({ data, onChange }) {
-    const handleChange = (event, index) => {
-      const newData = [...data];
-      newData[index] = event.target.value;
-      onChange(newData);
-    };
+  
 
     return (
       <div>

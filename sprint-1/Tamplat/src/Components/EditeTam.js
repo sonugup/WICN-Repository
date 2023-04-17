@@ -13,11 +13,7 @@ import React from "react";
     );
   }
 
-  const initialData = [
-    ["heding"],
-    ["task"],
-    
-  ];
+ 
 
 
   }

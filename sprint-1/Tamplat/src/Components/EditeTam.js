@@ -23,16 +23,7 @@ function EditableCell({ value, onChange }) {
 
     return (
       <div border="1px solid">
-        <tbody>
-          {data.map((row, index) => (
-            <EditableRow
-              key={index}
-              data={row}
-              onChange={(newRowData) => handleRowChange(newRowData, index)}
-            />
-          ))}
-        </tbody>
-      </div>
+        
     );
   }
 

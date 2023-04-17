@@ -2,16 +2,6 @@
 import React from "react";
 
 
-function EditableCell({ value, onChange }) {
- 
-
-  
-
-    return (
-      <div>
-        
-        
-    );
   }
 
   function EditableTable({ data, onChange }) {

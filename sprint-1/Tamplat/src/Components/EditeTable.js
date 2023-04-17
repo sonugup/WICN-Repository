@@ -59,15 +59,7 @@ const EditeTable = () => {
             note:"note"
             ,render:(text, record) => {
                 if(editT===record.key){
-                    return <div 
-                    note="note"
-                    rules = {[
-                        {
-                            required:true,
-                            massage:"please enter your address"
-                        }
-                    ]}
-                    >
+                 
                  
             }
         },

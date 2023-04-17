@@ -21,14 +21,7 @@ function EditableCell({ value, onChange }) {
     return (
       <div>
         
-        {data.map((value, index) => (
-          <EditableCell
-            key={index}
-            value={value}
-            onChange={(event) => handleChange(event, index)}
-          />
-        ))}
-      </div>
+        
     );
   }
 

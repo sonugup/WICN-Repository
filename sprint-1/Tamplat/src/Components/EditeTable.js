@@ -33,29 +33,7 @@ const EditeTable = () => {
                 }
             },
             task:"task",
-            render:(text, record) => {
-                if(editT===record.key){
-                    return <div 
-                    task="task"
-                    rules = {[
-                        {
-                            required:true,
-                            massage:"please enter your address"
-                        }
-                    ]}
-                    >
-                    <input/>
-                    </div>
-                }else{
-                    return <p>{text}</p>
-                }
-            },
-            note:"note"
-            ,render:(text, record) => {
-                if(editT===record.key){
-                 
-                 
-            }
+            
         },
        {
             heading:"heading",

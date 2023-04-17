@@ -15,11 +15,7 @@ function EditableCell({ value, onChange }) {
   }
 
   function EditableTable({ data, onChange }) {
-    const handleRowChange = (newData, index) => {
-      const newDataList = [...data];
-      newDataList[index] = newData;
-      onChange(newDataList);
-    };
+    
 
     return (
       <div border="1px solid">

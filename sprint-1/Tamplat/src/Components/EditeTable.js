@@ -13,12 +13,6 @@ const EditeTable = () => {
         },
     ]
   return (
-    <div>
-        <Table 
-        columns={columns}
-        datasour={datasour}
-        />
-    </div>
   )
 }
 

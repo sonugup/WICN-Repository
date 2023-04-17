@@ -68,11 +68,7 @@ const EditeTable = () => {
                         }
                     ]}
                     >
-                    <input/>
-                    </div>
-                }else{
-                    return <p>{text}</p>
-                }
+                 
             }
         },
        {

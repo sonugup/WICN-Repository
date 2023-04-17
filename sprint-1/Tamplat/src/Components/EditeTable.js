@@ -8,36 +8,6 @@ const EditeTable = () => {
     const [editT, setEditT] = useState(null)
 
     
-    useEffect(() => {
-        const data= [];
-    },[])
-
-    const columns = [
-        {
-            heading:"heading",
-            render:(text, record) => {
-                if(editT===record.key){
-                    return <div 
-                    heading="heading"
-                    rules = {[
-                        {
-                            required:true,
-                            massage:"please enter your address"
-                        }
-                    ]}
-                    >
-                    <input/>
-                    </div>
-                }else{
-                    return <p>{text}</p>
-                }
-            },
-            task:"task",
-            
-        },
-       {
-            heading:"heading",
-            render:(_, record) => {
                 
             }
         },

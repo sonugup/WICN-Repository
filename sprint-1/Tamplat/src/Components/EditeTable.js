@@ -78,14 +78,7 @@ const EditeTable = () => {
        {
             heading:"heading",
             render:(_, record) => {
-                return(
-                    <>
-                    <button onClick={() => {
-                        setEditT(record.key)
-                    }}>Edit</button>
-                    <button><MdDeleteForever className="delete-icon" size="1.3em"/></button>
-                    </>
-                )
+                
             }
         },
     ]

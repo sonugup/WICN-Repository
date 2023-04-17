@@ -3,13 +3,7 @@ import React from "react";
 
 
 function EditableCell({ value, onChange }) {
-    return (
-      <td>
-        <input className="int"  type="text" value={value} onChange={onChange} />
-        
-      </td>
-    );
-  }
+ 
 
   
 

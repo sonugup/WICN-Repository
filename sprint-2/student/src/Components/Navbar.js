@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { IconName } from "react-icons/ai";
 import {AiFillDashboard } from "react-icons/ai" 
-import {FcGraduationCap} from "react-icons/fc"
+import {FaGraduationCap} from "react-icons/fa"
 import {AiFillFolderOpen} from "react-icons/ai"
 import {HiQuestionMarkCircle} from "react-icons/hi"
 import {GiStarKey} from "react-icons/gi"
@@ -24,7 +24,7 @@ const Navbar = () => {
                 </Link>
                 <Link className='link' to={"/student"}>
                     <div>
-                        <FcGraduationCap/>
+                        <FaGraduationCap/>
                         Studend
                     </div>
                 </Link>

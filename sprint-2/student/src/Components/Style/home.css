@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contan{
+    margin:30px ;
+    padding: 0;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box{
+    margin:0 auto;
+    background-color: antiquewhite;
+    padding:0 10px;
+    border: 1px solid;
+}
+
+.navbox{
+    display: flex;
+    justify-content: space-between;
+    padding:0 30px ;
+    border: 1px solid;
+    margin: auto;
+}
+.navbox div{
+    padding: 43px 10px;
+    width: 90%;
+    border-radius: 5px;
+    color: white;
+}
+.divbox1{
+    display: flex;
+    font-size: 40px;
+    justify-content: space-between;
+    background-color: #fab1a0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.divbox2{
+    display: flex;
+    font-size: 40px;
+    background-color: #7ed6df;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.divbox3{
+    
+    display: flex;
+    font-size: 40px;
+    justify-content: space-between;
+    background-color: #95a5a6;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.divbox4{
+    
+    display: flex;
+    font-size: 40px;
+    justify-content: space-between;
+    background-color: #74b9ff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.link1{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.recen{
+    display: flex;
+}

@@ -95,7 +95,6 @@ body{
     margin: auto;
 }
 .topof{
-    /* border: 1px solid; */
     display: flex;
     justify-content: space-between;
     padding: 20px;

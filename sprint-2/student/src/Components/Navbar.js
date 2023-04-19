@@ -19,37 +19,37 @@ const Navbar = () => {
                 <Link className='link' component={Link} to={"/"}>
                     <div>
                     <AiFillDashboard/>
-                    Dosbord
+                    DASHBOARD
                     </div>
                 </Link>
                 <Link className='link' to={"/student"}>
                     <div>
                         <FaGraduationCap/>
-                        Studend
+                        STUDENT
                     </div>
                 </Link>
                 <Link className='link' to={"/result"}>
                     <div>
                         <AiFillFolderOpen/>
-                       Result
+                       RESULT
                     </div>
                 </Link>
                 <Link className='link' to={"/questions"}>
                     <div>
                         <HiQuestionMarkCircle/>
-                        Questions
+                        QUESTIONS
                     </div>
                 </Link>
                 <Link className='link' to={"/quizs"}>
                     <div>
                         <GiStarKey/>
-                        Quizs
+                        QUIZS
                     </div>
                 </Link>
                 <Link className='link' to={"/studyMaterial"}>
                     <div>
                         <MdLibraryBooks/>
-                        Study Material
+                        STUDY MATERIAL
                     </div>
                 </Link>
                

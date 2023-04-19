@@ -4,20 +4,23 @@
 }
 body{
     background-color: rgb(223, 221, 221);
+   position: relative;
 }
 .navbar{
     display: flex;
+    position: fixed;
     justify-content: space-evenly;
     width: 100%;
-    height: 80px;
+    margin: -7.5% ;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .navbar div{
-    padding: 20px;
+    padding: 10px 0;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 14px;
     margin: 10px;
+    display: flex;
     text-decoration: none;
 }
 .navbar div:hover{
@@ -34,5 +37,5 @@ body{
 .iwcn{
     width: 100px;
     height: 30px;
-    margin: 25px 0;
+    margin: 17px 0;
 }

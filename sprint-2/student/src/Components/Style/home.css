@@ -2,31 +2,37 @@
     margin: 0;
     padding: 0;
 }
-
-.contan{
-    margin:30px ;
+body{
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+.contan{
+    margin:9% -7%;
+   
     background-color: white;
     min-height: 100vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .box{
-    margin:0 auto;
-    background-color: antiquewhite;
+    margin: 0;
+    padding-bottom: -30px;
+    background-color: white;
     padding:0 10px;
-    border: 1px solid;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navbox{
     display: flex;
     justify-content: space-between;
-    padding:0 30px ;
-    border: 1px solid;
-    margin: auto;
+    padding:-3px 20px ;
+    /* border: 1px solid green; */
+    margin:0 auto;
+    /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19); */
 }
 .navbox div{
-    padding: 43px 10px;
-    width: 90%;
+    padding: 32px 10px;
+    width: 100%;
     border-radius: 5px;
     color: white;
 }
@@ -67,4 +73,34 @@
 }
 .recen{
     display: flex;
+}
+.cont{
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19); */
+}
+.secbox{
+    width: 48%;
+    margin: auto;
+    padding: 10px;
+    height: 460px;
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    transition: box-shadow .1s ease-in-out;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+
+}
+.inbox{
+    /* border: 1px solid; */
+    width: 100%;
+    margin: auto;
+}
+.topof{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
 }

@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import axios from "axios";
-import "./Style/home.css";
-import { FaGraduationCap } from "react-icons/fa";
-import { AiOutlineQuestionCircle } from "react-icons/ai";
-import { GiStarKey } from "react-icons/gi";
-import { FaUsersSlash } from "react-icons/fa";
+import React, { useEffect, useState } from 'react'
+import {Link} from "react-router-dom"
+import axios from "axios"
 import { BiCircle } from "react-icons/bi";
-// import Data from "./data/data";
 
-const Home = () => {
+const Student = () => {
   const [data, setData]= useState([])
+
   const [curPage, setCurPage] = useState(1);
   const recordsPerPage = 5;
   const lastIndex = curPage * recordsPerPage;
@@ -18,7 +13,7 @@ const Home = () => {
   const records = data.slice(firstIndex, lastIndex);
   const npage = Math.ceil(data.length / recordsPerPage);
   const number = [...Array(npage + 1).keys()].slice(1);
-  console.log(data);
+  
 
   const prePage = () => {
     if (curPage !== firstIndex) {
@@ -35,54 +30,18 @@ const Home = () => {
   };
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/student`)
-    .then(res => setData(res.data))
-    .catch(error => console.log(error))
-},[])
-console.log(data)
+      axios.get(`http://localhost:8080/student`)
+      .then(res => setData(res.data))
+      .catch(error => console.log(error))
+  },[])
+  console.log(data)
+
   return (
-    <div className="contan">
-      <div className="box">
-        <div className="navbox">
-          <div>
-            <div className="divbox1">
-              <Link className="link1" to={"/student"}>
-                <h5>Total Student</h5>
-                <h4>224</h4>
-              </Link>
-              <FaGraduationCap />
-            </div>
-          </div>
-          <div>
-            <div className="divbox2">
-              <Link className="link1" to={"/questions"}>
-                <h5>Total Questions</h5>
-                <h4>228</h4>
-              </Link>
-              <AiOutlineQuestionCircle />
-            </div>
-          </div>
-          <div>
-            <div className="divbox3">
-              <Link className="link1" to={"/quizs"}>
-                <h5>Quiz Avilable</h5>
-                <h4>224</h4>
-              </Link>
-              <GiStarKey />
-            </div>
-          </div>
-          <div>
-            <div className="divbox4">
-              <Link className="link1" to={"/student"}>
-                <h5>Total Users</h5>
-                <h4>224</h4>
-              </Link>
-              <FaUsersSlash />
-            </div>
-          </div>
-        </div>
-        <div className="cont">
-          <div className="secbox">
+    
+    <div>
+      Total Student
+      <div>
+      <div className="secbox1">
             <div className="recen">
               <p>Recently Registered Students</p>
               <hr />
@@ -105,7 +64,7 @@ console.log(data)
                 </div>
                 <div>
                   <span>
-                    Search <input type="text" />
+                    Search <Link to={"/create"} className='btn btn-success'> Add</Link>
                   </span>
                 </div>
               </div>
@@ -117,6 +76,8 @@ console.log(data)
                       <th scope="col">EMAI</th>
                       <th scope="col">FULL NAME</th>
                       <th scope="col">CONTAICT NUMBER</th>
+                      <th scope="col">GTOUP</th>
+                      <th scope="col">ACTION</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -126,6 +87,13 @@ console.log(data)
                           <td>{d.email}</td>
                           <td>{d.name}</td>
                           <td>{d.contact}</td>
+                          <td>{d.group}</td>
+                          <td>
+                            <Link className='text-decoration-none btn btn-sm btn-info' to={`/update/${d.id}`}>
+                              Update
+                            </Link>
+                            <button>Delete</button>
+                          </td>
                         </tr>
                       );
                     })}
@@ -165,15 +133,9 @@ console.log(data)
               </div>
             </div>
           </div>
-          <div className="secbox">
-          
-            <p>Revenue nan% from last month</p>
-          </div>
-        </div>
       </div>
-      Hi student
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Student

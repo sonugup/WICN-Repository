@@ -2,11 +2,13 @@ import React from 'react'
 import { Route, Routes } from "react-router-dom";
 import Home from './Home'
 import Error from './Error';
-import Student from './Student';
+import Student from './Pages/Student';
 import Result from './Pages/Result';
 import Questions from './Pages/Questions';
 import Quizs from './Pages/Quizs';
 import StudyMaterial from './Pages/StudyMaterial';
+import Create from './Pages/Create';
+import Update from './Pages/Update';
 const AllRoute = () => {
   return (
     <div>
@@ -17,6 +19,8 @@ const AllRoute = () => {
         <Route path="/questions" element={<Questions />} />
         <Route path="/quizs" element={<Quizs />} />
         <Route path="/studyMaterial" element={<StudyMaterial />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/update/:id" element={<Update />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>

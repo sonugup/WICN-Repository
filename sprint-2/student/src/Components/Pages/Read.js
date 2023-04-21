@@ -16,7 +16,7 @@ const Read = () => {
   }, []);
   return (
     <div className="container">
-      <div className='box'>
+      <div className="box">
         {
           <div key={data1.id}>
             <p> {data1.id} </p>

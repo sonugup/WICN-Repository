@@ -10,17 +10,15 @@ const Create = () => {
     group: "",
   });
 
-  const navigate=useNavigate()
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post(`http://localhost:8080/student`, inputData)
-    .then(res => {
-        alert("data posted successfully")
-        navigate("/student")
-    })
-  }
-
+    axios.post(`http://localhost:8080/student`, inputData).then((res) => {
+      alert("data posted successfully");
+      navigate("/student");
+    });
+  };
 
   return (
     <div className="d-flext w-100 vh-100 justify-content-center align-items-center">
@@ -36,7 +34,9 @@ const Create = () => {
               className="form-control"
               name="email"
               aria-describedby="emailHelp"
-              onChange={(e => setInputData({...inputData, email:e.target.value}))}
+              onChange={(e) =>
+                setInputData({ ...inputData, email: e.target.value })
+              }
             />
             <div id="emailHelp" className="form-text">
               We'll never share your email with anyone else.
@@ -48,7 +48,9 @@ const Create = () => {
               type="text"
               className="form-control"
               name="name"
-              onChange={(e => setInputData({...inputData, name:e.target.value}))}
+              onChange={(e) =>
+                setInputData({ ...inputData, name: e.target.value })
+              }
             />
           </div>
           <div className="mb-3">
@@ -57,17 +59,21 @@ const Create = () => {
               type="number"
               className="form-control"
               name="contact"
-              onChange={(e => setInputData({...inputData, contact:e.target.value}))}
+              onChange={(e) =>
+                setInputData({ ...inputData, contact: e.target.value })
+              }
             />
           </div>
           <div className="mb-3">
             <label className="form-label">Group</label>
-            <input 
-            type="text" 
-            className="form-control"
-            name="group"
-            onChange={(e => setInputData({...inputData, group:e.target.value}))}
-             />
+            <input
+              type="text"
+              className="form-control"
+              name="group"
+              onChange={(e) =>
+                setInputData({ ...inputData, group: e.target.value })
+              }
+            />
           </div>
           {/* <div className="mb-3 form-check">
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>

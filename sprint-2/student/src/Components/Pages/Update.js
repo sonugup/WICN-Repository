@@ -20,7 +20,7 @@ const Update = () => {
         axios.get(`http://localhost:8080/student/${id}`)
         .then(res => setInputData(res.data))
         .catch(error => console.log(error))
-      })
+      },[])
     
       const handleSubmit = (event) => {
         event.preventDefault();
@@ -29,16 +29,17 @@ const Update = () => {
             alert("data update successfully")
             navigate("/student")
         })
+        .catch(error => console.log(error))
       }
 
   return (
     <div className="d-flext w-100 vh-100 justify-content-center align-items-center">
       Add Student
       <div className="w-50 border bg-secondary text-white p-5">
-     
-        <form onSubmit={handleSubmit} key={id}>
+      {/*  */}
+        <form onSubmit={handleSubmit} >
           <div className="mb-3">
-            <label  className="form-label" htmlFor='email'>
+            <label   htmlFor='email'>
               Email address
             </label>
             <input
@@ -48,12 +49,10 @@ const Update = () => {
               value={inputData.email}
               onChange={(e => setInputData({...inputData, email:e.target.value}))}
             />
-            <div id="emailHelp" className="form-text">
-              We'll never share your email with anyone else.
-            </div>
+            
           </div>
           <div className="mb-3">
-            <label className="form-label" htmlFor='name'>Full Name</label>
+            <label  htmlFor='name'>Full Name</label>
             <input
               type="text"
               name="name"
@@ -63,7 +62,7 @@ const Update = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label" htmlFor='contact'>Contact Number</label>
+            <label  htmlFor='contact'>Contact Number</label>
             <input
               type="number"
               name="contact"
@@ -73,7 +72,7 @@ const Update = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label" htmlFor='group'>Group</label>
+            <label  htmlFor='group'>Group</label>
             <input 
             type="text" 
             name="group"

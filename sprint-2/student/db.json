@@ -1,62 +1,6 @@
 {
   "student": [
     {
-      "id": 1,
-      "email": "vikassadarang22533@gmail.com",
-      "name": "Vilas Sadarang",
-      "contact": 1234567895,
-      "group": "React.js"
-    },
-    {
-      "id": 2,
-      "email": "vikassadarang22533@gmail.com",
-      "name": "Vilas Sadarang",
-      "contact": 1234567895,
-      "group": "React.js"
-    },
-    {
-      "id": 3,
-      "email": "vikassadarang22533@gmail.com",
-      "name": "Vilas Sadarang",
-      "contact": 1234567895,
-      "group": "React.js"
-    },
-    {
-      "id": 4,
-      "email": "vikassadarang22533@gmail.com",
-      "name": "Vilas Sadarang",
-      "contact": 1234567895,
-      "group": "React.js"
-    },
-    {
-      "id": 5,
-      "email": "vikassadarang22533@gmail.com",
-      "name": "Vilas Sadarang",
-      "contact": 1234567895,
-      "group": "React.js"
-    },
-    {
-      "id": 6,
-      "email": "vikassadarang22533@gmail.com",
-      "name": "Vilas Sadarang",
-      "contact": 1234567895,
-      "group": "React.js"
-    },
-    {
-      "id": 7,
-      "email": "vikassadarang22533@gmail.com",
-      "name": "Vilas Sadarang",
-      "contact": 1234567895,
-      "group": "React.js"
-    },
-    {
-      "id": 8,
-      "email": "vikassadarang22533@gmail.com",
-      "name": "Vilas Sadarang",
-      "contact": 1234567895,
-      "group": "React.js"
-    },
-    {
       "id": 9,
       "email": "vikassadarang22533@gmail.com",
       "name": "Vilas Sadarang",
@@ -64,46 +8,39 @@
       "group": "React.js"
     },
     {
-      "id": 10,
-      "email": "vikassadarang22533@gmail.com",
-      "name": "Vilas Sadarang",
-      "contact": 1234567895,
-      "group": "React.js"
-    },
-    {
-      "email": "akansh@gmail.com",
-      "name": "Akansh",
-      "contact": "34502344903",
+      "email": "akansha@gmail.com",
+      "name": "Akansha",
+      "contact": "3450234490",
       "group": "electron.js",
       "id": 11
     },
     {
-      "email": "akansh@gmail.com",
-      "name": "Akansh ",
-      "contact": "49382804",
-      "group": "Electron.js",
-      "id": 12
-    },
-    {
-      "email": "aknsha@gmail.com",
-      "name": "Akansh 2",
-      "contact": "4390840349",
-      "group": "Electron.js",
-      "id": 13
-    },
-    {
       "email": "govind@gmail.com",
       "name": "Govind",
-      "contact": "485038457",
+      "contact": "4850384658",
       "group": "React.js",
       "id": 14
     },
     {
       "email": "sonu@gmail.com",
       "name": "Sonu",
-      "contact": "4398548923",
+      "contact": "4398548934",
       "group": "React.js",
       "id": 15
+    },
+    {
+      "email": "sonugovind@gmail.com",
+      "name": "Sonu and Govind",
+      "contact": "9238457684",
+      "group": "full stack web developar",
+      "id": 16
+    },
+    {
+      "email": "asdfg@gmail.com",
+      "name": "Asdfg",
+      "contact": "3425487537",
+      "group": "node.js",
+      "id": 17
     }
   ]
 }

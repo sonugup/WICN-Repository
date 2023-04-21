@@ -9,6 +9,7 @@ import Quizs from './Pages/Quizs';
 import StudyMaterial from './Pages/StudyMaterial';
 import Create from './Pages/Create';
 import Update from './Pages/Update';
+import Read from './Pages/Read';
 const AllRoute = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ const AllRoute = () => {
         <Route path="/studyMaterial" element={<StudyMaterial />} />
         <Route path="/create" element={<Create />} />
         <Route path="/update/:id" element={<Update />} />
+        <Route path="/read/:id" element={<Read />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import axios from "axios"
 import { BiCircle } from "react-icons/bi";
 
@@ -7,14 +7,15 @@ const Student = () => {
   const [data, setData]= useState([])
 
   const [curPage, setCurPage] = useState(1);
-  const recordsPerPage = 5;
+  const recordsPerPage = 10;
   const lastIndex = curPage * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
   const records = data.slice(firstIndex, lastIndex);
   const npage = Math.ceil(data.length / recordsPerPage);
   const number = [...Array(npage + 1).keys()].slice(1);
   
-
+ 
+  const navigate=useNavigate
   const prePage = () => {
     if (curPage !== firstIndex) {
       setCurPage(curPage - 1);
@@ -36,11 +37,24 @@ const Student = () => {
   },[])
   console.log(data)
 
+
+  const handleDelete = (id) => {
+    const confirm=window.confirm("Do you like to Delete")
+    if(confirm){
+      axios.delete(`http://localhost:8080/student/${id}`)
+      .then(res => {
+        alert("Record Deleted")
+        navigate("/student")
+      })
+    }
+    
+  }
+
   return (
     
     <div>
       Total Student
-      <div>
+      <div className='box'>
       <div className="secbox1">
             <div className="recen">
               <p>Recently Registered Students</p>
@@ -83,16 +97,19 @@ const Student = () => {
                   <tbody>
                     {records.map((d, i) => {
                       return (
-                        <tr key={i} className="inboxin">
+                        <tr key={i}>
                           <td>{d.email}</td>
                           <td>{d.name}</td>
                           <td>{d.contact}</td>
                           <td>{d.group}</td>
                           <td>
-                            <Link className='text-decoration-none btn btn-sm btn-info' to={`/update/${d.id}`}>
+                            <Link className='text-decoration-none btn btn-sm btn-success' to={`/update/${d.id}`}>
                               Update
                             </Link>
-                            <button>Delete</button>
+                            <button className='text-decoration-none btn btn-sm btn-danger' onClick={e => handleDelete(d.id)}>Delete</button>
+                            <Link className='text-decoration-none btn btn-sm btn-primary' to={`/read/${d.id}`}>
+                              Read
+                            </Link>
                           </td>
                         </tr>
                       );
@@ -136,6 +153,7 @@ const Student = () => {
       </div>
     </div>
   )
+  
 }
 
 export default Student

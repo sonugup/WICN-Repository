@@ -79,7 +79,7 @@ const Create = () => {
   
     
   
-          <button type="submit" className="btn btn-primary btn-info">
+          <button type="submit" className="btn btn-primary btn-success">
             Submit
           </button>
         </form>

@@ -76,7 +76,7 @@ const Create = () => {
             />
           </div>
           {/* <div className="mb-3 form-check">
-    <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
+  
     
   
           <button type="submit" className="btn btn-primary btn-info">

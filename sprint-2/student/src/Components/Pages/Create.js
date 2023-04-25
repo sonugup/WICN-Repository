@@ -14,7 +14,8 @@ const Create = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post(`http://localhost:8080/student`, inputData).then((res) => {
+    axios.post(`http://localhost:8081/student`, inputData).then((res) => {
+      console.log(res)
       alert("data posted successfully");
       navigate("/student");
     });

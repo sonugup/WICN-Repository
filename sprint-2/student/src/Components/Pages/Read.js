@@ -10,7 +10,7 @@ const Read = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/student/${id}`)
+      .get(`http://localhost:8081/read/${id}`)
       .then((res) => setData1(res.data))
       .catch((error) => console.log(error));
   }, []);

@@ -17,14 +17,14 @@ const Update = () => {
       const navigate=useNavigate()
 
       useEffect(() => {
-        axios.get(`http://localhost:8080/student/${id}`)
+        axios.get(`http://localhost:8080/students/${id}`)
         .then(res => setInputData(res.data))
         .catch(error => console.log(error))
       },[])
     
       const handleSubmit = (event) => {
         event.preventDefault();
-        axios.put(`http://localhost:8080/student/${id}`, inputData)
+        axios.put(`http://localhost:8080/students/${id}`, inputData)
         .then(res => {
             alert("data update successfully")
             navigate("/student")

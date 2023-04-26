@@ -10,17 +10,42 @@ const Create = () => {
     group: "",
   });
 
+  const {name, email, contact, group} = inputData;
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post(`http://localhost:8081/student`, inputData).then((res) => {
-      console.log(res)
-      alert("data posted successfully");
+
+    if(!name || !email || !contact || !group){
+      console.log("please fill the form")
+    }
+    else{
+      axios.post(`http://localhost:8081/api/post`, {
+        name, 
+        email, 
+        contact,
+        group
+      })
+      .then(() => {
+        setInputData({name:"", email:"", contact:"", group:""});
+      })
+      .catch((err) =>console.log(err));
+
+      alert("success")
       navigate("/student");
-    });
+    }
+
+    // axios.post(`http://localhost:8081/studetspost`, inputData).then((res) => {
+    //   console.log(res)
+    //   alert("data posted successfully");
+    //   navigate("/student");
+    // });
   };
 
+  const hendlechenge =(e) => {
+    const {name, value}=e.target;
+    setInputData({...inputData, [name]:value});
+  }
   return (
     <div className="d-flext w-100 vh-100 justify-content-center align-items-center">
       Add Student
@@ -35,9 +60,10 @@ const Create = () => {
               className="form-control"
               name="email"
               aria-describedby="emailHelp"
-              onChange={(e) =>
-                setInputData({ ...inputData, email: e.target.value })
-              }
+              // onChange={(e) =>
+              //   setInputData({ ...inputData, email: e.target.value })
+              // }
+              onChange={hendlechenge}
             />
             <div id="emailHelp" className="form-text">
               We'll never share your email with anyone else.
@@ -49,9 +75,10 @@ const Create = () => {
               type="text"
               className="form-control"
               name="name"
-              onChange={(e) =>
-                setInputData({ ...inputData, name: e.target.value })
-              }
+              onChange={hendlechenge}
+              // onChange={(e) =>
+              //   setInputData({ ...inputData, name: e.target.value })
+              // }
             />
           </div>
           <div className="mb-3">
@@ -60,9 +87,10 @@ const Create = () => {
               type="number"
               className="form-control"
               name="contact"
-              onChange={(e) =>
-                setInputData({ ...inputData, contact: e.target.value })
-              }
+              onChange={hendlechenge}
+              // onChange={(e) =>
+              //   setInputData({ ...inputData, contact: e.target.value })
+              // }
             />
           </div>
           <div className="mb-3">
@@ -71,9 +99,10 @@ const Create = () => {
               type="text"
               className="form-control"
               name="group"
-              onChange={(e) =>
-                setInputData({ ...inputData, group: e.target.value })
-              }
+              onChange={hendlechenge}
+              // onChange={(e) =>
+              //   setInputData({ ...inputData, group: e.target.value })
+              // }
             />
           </div>
           <button type="submit" className="btn btn-primary btn-success">

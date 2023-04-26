@@ -10,9 +10,9 @@ const Student = () => {
   const recordsPerPage = 10;
   const lastIndex = curPage * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
-  // const records = data.slice(firstIndex, lastIndex);
+  const records = data.slice(firstIndex, lastIndex);
   const npage = Math.ceil(data.length / recordsPerPage);
-  // const number = [...Array(npage + 1).keys()].slice(1);
+  const number = [...Array(npage + 1).keys()].slice(1);
 
   const navigate = useNavigate;
   const prePage = () => {
@@ -29,21 +29,23 @@ const Student = () => {
     }
   };
 
+  const loadData = async () =>{
+    const respons= await axios.get(`http://localhost:8081/api/get`);
+    setData(respons.data)
+  }
+
   useEffect(() => {
-    axios
-      .get(`http://localhost:8081/`)
-      .then((res) => setData(res))
-      .catch((error) => console.log(error));
+    loadData();
   }, []);
   console.log(data);
 
   const handleDelete = (id) => {
-    const confirm = window.confirm("Do you like to Delete");
-    if (confirm) {
-      axios.delete(`http://localhost:8081/${id}`).then((res) => {
-        alert("Record Deleted");
+    // const confirm = window.confirm("Do you like to Delete");
+    if (window.confirm("Do you like to Delete")) {
+      axios.delete(`http://localhost:8081/api/remove/${id}`);
+       alert("Record Deleted");
         navigate("/student");
-      });
+      
     }
   };
 
@@ -74,9 +76,7 @@ const Student = () => {
               </div>
               <div>
                 <span>
-                  Search{" "}
                   <Link to={"/create"} className="btn btn-success">
-                    {" "}
                     Add
                   </Link>
                 </span>
@@ -93,7 +93,7 @@ const Student = () => {
                     <th scope="col">ACTION</th>
                   </tr>
                 </thead>
-                {/* <tbody>
+                <tbody>
                   {data.map((d, i) => {
                     return (
                       <tr key={i}>
@@ -108,10 +108,7 @@ const Student = () => {
                           >
                             Update
                           </Link>
-                          <button
-                            className="text-decoration-none btn btn-sm btn-danger"
-                            onClick={(e) => handleDelete(d.id)}
-                          >
+                          <button className="text-decoration-none btn btn-sm btn-danger" onClick={() => handleDelete(d.id)}>
                             Delete
                           </button>
                           <Link
@@ -124,7 +121,7 @@ const Student = () => {
                       </tr>
                     );
                   })}
-                </tbody> */}
+                </tbody>
               </table>
               <nav>
                 <ul className="pagination">
@@ -133,7 +130,7 @@ const Student = () => {
                       prev
                     </button>
                   </li>
-                  {/* {number.map((n, i) => {
+                  {number.map((n, i) => {
                     return (
                       <li
                         className={`page-item ${curPage === n ? "activ" : ""}`}
@@ -147,7 +144,7 @@ const Student = () => {
                         </button>
                       </li>
                     );
-                  })} */}
+                  })}
                   <li className="page-item">
                     <button className="page-link" onClick={nextPage}>
                       Next

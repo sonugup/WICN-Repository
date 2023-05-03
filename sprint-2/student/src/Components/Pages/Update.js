@@ -17,20 +17,25 @@ const Update = () => {
       const navigate=useNavigate()
 
       useEffect(() => {
-        axios.get(`http://localhost:8080/students/${id}`)
-        .then(res => setInputData(res.data))
+        axios.get(`http://localhost:8081/api/get/${id}`)
+        .then(res => setInputData(res.data[0]))
         .catch(error => console.log(error))
       },[])
+      console.log(inputData.name)
     
       const handleSubmit = (event) => {
         event.preventDefault();
-        axios.put(`http://localhost:8080/students/${id}`, inputData)
+        axios.put(`http://localhost:8081/api/update/${id}`, inputData)
         .then(res => {
+          setInputData(res.data[0])
             alert("data update successfully")
             navigate("/student")
+
         })
         .catch(error => console.log(error))
       }
+
+     
 
   return (
     <div className="d-flext w-100 vh-100 justify-content-center align-items-center">

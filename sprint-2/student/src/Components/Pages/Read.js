@@ -10,20 +10,20 @@ const Read = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8081/students/read/${id}`)
-      .then((res) => setData1(res.data))
+      .get(`http://localhost:8081/api/get/${id}`)
+      .then((res) => setData1(res.data[0]))
       .catch((error) => console.log(error));
   }, []);
   return (
     <div className="container">
       <div className="box">
         {
-          <div key={data1.id}>
+          <div key={data1.id} className="m-30 pt-10">
             <p> {data1.id} </p>
-            <p> {data1.email} </p>
-            <p> {data1.name} </p>
-            <p> {data1.contact} </p>
-            <p> {data1.group} </p>
+            <p>Email =: {data1.email} </p>
+            <p>Name =: {data1.name} </p>
+            <p>Contact =: {data1.contact} </p>
+            <p>Group =: {data1.group} </p>
           </div>
         }
       </div>

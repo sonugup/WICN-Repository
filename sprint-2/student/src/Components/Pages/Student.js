@@ -30,8 +30,8 @@ const Student = () => {
   };
 
   const loadData = async () =>{
-    const respons= await axios.get(`http://localhost:8081/api/get`);
-    setData(respons.data)
+    const resp= await axios.get(`http://localhost:8081/api/get`);
+    setData(resp.data)
   }
 
   useEffect(() => {
@@ -47,6 +47,7 @@ const Student = () => {
         navigate("/student");
       
     }
+    console.log(id)
   };
 
   return (
@@ -94,7 +95,7 @@ const Student = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {data.map((d, i) => {
+                  {records.map((d, i) => {
                     return (
                       <tr key={i}>
                         <td>{d.email}</td>

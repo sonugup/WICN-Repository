@@ -40,7 +40,7 @@ const Student = () => {
   console.log(data);
 
   const handleDelete = (id) => {
-    // const confirm = window.confirm("Do you like to Delete");
+    
     if (window.confirm("Do you like to Delete")) {
       axios.delete(`http://localhost:8081/api/remove/${id}`);
        alert("Record Deleted");

@@ -35,8 +35,7 @@ const Create = () => {
       navigate("/student");
     }
 
-    axios.post(`http://localhost:8081/studetspost`, inputData).then((res) => {
-    });
+    
   };
 
   const hendlechenge =(e) => {

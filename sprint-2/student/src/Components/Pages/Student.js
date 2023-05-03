@@ -131,6 +131,7 @@ const Student = () => {
                       prev
                     </button>
                   </li>
+                  
                   {number.map((n, i) => {
                     return (
                       <li

@@ -61,9 +61,6 @@ const Login = () => {
                   className="form-control"
                   name="email"
                   aria-describedby="emailHelp"
-                  onChange={(e) =>
-                    setInputData({ ...inputData, email: e.target.value })
-                  }
                   onChange={hendlechenge}
                 />
               </div>

@@ -74,9 +74,9 @@ const Login = () => {
                   className="form-control"
                   name="password"
                   onChange={hendlechenge}
-                  // onChange={(e) =>
-                  //   setInputData({ ...inputData, name: e.target.value })
-                  // }
+                  onChange={(e) =>
+                    setInputData({ ...inputData, name: e.target.value })
+                  }
                 />
               </div>
               

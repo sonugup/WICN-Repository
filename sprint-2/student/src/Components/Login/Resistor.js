@@ -10,8 +10,7 @@ const Resistor = () => {
     const [inputData, setInputData] = useState({
         email: "",
         name: "",
-        contact: "",
-        group: "",
+        password: ""
       });
     
       const {name, email, contact, group} = inputData;
@@ -27,11 +26,10 @@ const Resistor = () => {
           axios.post(`http://localhost:8081/api/post`, {
             name, 
             email, 
-            contact,
-            group
+            password,
           })
           .then(() => {
-            setInputData({name:"", email:"", contact:"", group:""});
+            setInputData({name:"", email:"", password:""});
           })
           .catch((err) =>console.log(err));
     

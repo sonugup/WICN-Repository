@@ -55,7 +55,7 @@ const Resistor = () => {
         <div className="d-flext w-100 vh-100 justify-content-center align-items-center">
           
           <div className="w-50 shadow-lg h-100 mb-5 bg-secondary  text-dark bg-opacity-50 rounded border  text-white p-5">
-            <h1 className="m-2 p-2"><FaUserAlt/>Resistor...</h1>
+            <h1 className="m-2 p-2"><FaUserAlt/> Let Us Know You!</h1>
             <hr/>
             <hr/>
             <form onSubmit={handleSubmit}>

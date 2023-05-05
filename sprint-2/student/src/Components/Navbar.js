@@ -7,6 +7,7 @@ import {AiFillFolderOpen} from "react-icons/ai"
 import {HiQuestionMarkCircle} from "react-icons/hi"
 import {GiStarKey} from "react-icons/gi"
 import {MdLibraryBooks} from "react-icons/md"
+import {FaUserAlt} from "react-icons/fa"
 import "./Style/navbar.css"
 const Navbar = () => {
   return (
@@ -52,7 +53,12 @@ const Navbar = () => {
                         STUDY MATERIAL
                     </div>
                 </Link>
-               
+                <Link className='link' to={"/login"}>
+                    <div>
+                        <FaUserAlt/>
+                        LOGIN
+                    </div>
+                </Link>
             </div>
         </div>
       </div>

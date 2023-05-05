@@ -10,11 +10,19 @@ import StudyMaterial from './Pages/StudyMaterial';
 import Create from './Pages/Create';
 import Update from './Pages/Update';
 import Read from './Pages/Read';
+import MainPage from './MainPage';
+import Navbar from './Navbar';
+import Resistor from './Login/Resistor';
 const AllRoute = () => {
   return (
     <div>
+      
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<MainPage />} />
+      
+      
+        <Route path="/resistor" element={<Resistor />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/student" element={<Student />} />
         <Route path="/result" element={<Result />} />
         <Route path="/questions" element={<Questions />} />
@@ -24,6 +32,7 @@ const AllRoute = () => {
         <Route path="/update/:id" element={<Update />} />
         <Route path="/read/:id" element={<Read />} />
         <Route path="*" element={<Error />} />
+        
       </Routes>
     </div>
   )

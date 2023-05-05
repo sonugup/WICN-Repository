@@ -7,27 +7,29 @@ import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { GiStarKey } from "react-icons/gi";
 import { FaUsersSlash } from "react-icons/fa";
 import { BiCircle } from "react-icons/bi";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
+// import {
+//   Chart as ChartJS,
+//   CategoryScale,
+//   LinearScale,
+//   PointElement,
+//   LineElement,
+//   Title,
+//   Tooltip,
+//   Legend,
+// } from 'chart.js';
 
+// import { Line } from 'react-chartjs-2';
+// import faker from 'faker';
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
+// ChartJS.register(
+//   CategoryScale,
+//   LinearScale,
+//   PointElement,
+//   LineElement,
+//   Title,
+//   Tooltip,
+//   Legend
+// );
 // import Data from "./data/data";
 
 const Home = () => {
@@ -189,7 +191,7 @@ console.log(data)
           <div className="secbox">
           
             <p>Revenue nan% from last month</p>
-            <ChartData/>
+            {/* <ChartData/> */}
           </div>
         </div>
       </div>
@@ -198,45 +200,48 @@ console.log(data)
   );
 };
 
-export default Home;
 
-const ChartData=() => {
-   const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'top',
-      },
-      title: {
-        display: true,
-        text: 'Order this year',
-      },
-    },
-  };
 
-  const labels = ['2000', '2002', '2004', '2006', '2008', '2010', '2012'];
-  const data = {
-    labels,
-    datasets: [
-      {
-        label: 'Dataset 1',
-        data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      },
-      {
-        label: 'Dataset 2',
-        data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: 'rgb(53, 162, 235)',
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      },
-    ],
-  };
-  return (
-    <div>
-      <Line options={options} data={data} />;
-    </div>
-  )
+// const ChartData=() => {
+//    const options = {
+//     responsive: true,
+//     plugins: {
+//       legend: {
+//         position: 'top',
+//       },
+//       title: {
+//         display: true,
+//         text: 'Order this year',
+//       },
+//     },
+//   };
+
+//   const labels = ['2000', '2002', '2004', '2006', '2008', '2010', '2012'];
+//   const data = {
+//     labels,
+//     datasets: [
+//       {
+//         label: 'Dataset 1',
+//         data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+//         borderColor: 'rgb(255, 99, 132)',
+//         backgroundColor: 'rgba(255, 99, 132, 0.5)',
+//       },
+//       {
+//         label: 'Dataset 2',
+//         data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+//         borderColor: 'rgb(53, 162, 235)',
+//         backgroundColor: 'rgba(53, 162, 235, 0.5)',
+//       },
+//     ],
+//   };
+//   return (
+//     <div>
+//       <Line options={options} data={data} />;
+//     </div>
+//   )
   
 
-}
+// }
+
+
+export default Home;

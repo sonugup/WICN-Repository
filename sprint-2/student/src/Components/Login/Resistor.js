@@ -37,11 +37,7 @@ const Resistor = () => {
           navigate("/student");
         }
     
-        // axios.post(`http://localhost:8081/studetspost`, inputData).then((res) => {
-        //   console.log(res)
-        //   alert("data posted successfully");
-        //   navigate("/student");
-        // });
+       
       };
     
       const hendlechenge =(e) => {

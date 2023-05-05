@@ -104,8 +104,8 @@ const Resistor = () => {
               <button type="submit" className="btn btn-primary btn-success">
                 Sigin
               </button>
-<div className="mt-5 text-center bg-secondary p-3 text-dark bg-opacity-50 rounded text-white">
-              <span>Don't have an account? <Link to="/resistor" className="bg-secondary p-2 text-white bg-opacity-75 rounded border-none text-decoration-none">Sign UP <CiLogin/> </Link> </span>
+              <div className="mt-5 text-center bg-secondary p-3 text-dark bg-opacity-50 rounded text-white">
+              <span>Have an account? <Link to="/" className="bg-secondary p-2 text-white bg-opacity-75 rounded border-none text-decoration-none">Sign UP <CiLogin/> </Link> </span>
               </div>
             </form>
           </div>

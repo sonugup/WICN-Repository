@@ -23,11 +23,7 @@ const Resistor = () => {
       console.log(res)
     })
   }
-    // const [inputData, setInputData] = useState({
-    //     email: "",
-    //     name: "",
-    //     password: ""
-    //   });
+    
     
    
     

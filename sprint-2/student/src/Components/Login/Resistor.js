@@ -39,11 +39,7 @@ const Resistor = () => {
     //       console.log("please fill the form")
     //     }
     //     else{
-    //       axios.post(`http://localhost:8081/register`, {
-    //         name, 
-    //         email, 
-    //         password,
-    //       })
+   
     
     
     

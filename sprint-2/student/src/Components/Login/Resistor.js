@@ -49,12 +49,7 @@ const Resistor = () => {
     //       })
     //       .catch((err) =>console.log(err));
     
-    //       alert("success")
-    //       navigate("/student");
-    //     }
     
-       
-    //   };
     
     
       return (

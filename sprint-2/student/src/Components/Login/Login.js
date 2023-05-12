@@ -30,11 +30,7 @@ const Login = () => {
     })
   }
 
-    // const [inputData, setInputData] = useState({
-    //     email: "",
-    //     password: ""
-        
-    //   });
+  
     
     
   

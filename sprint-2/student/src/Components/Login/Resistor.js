@@ -44,11 +44,6 @@ const Resistor = () => {
     //         email, 
     //         password,
     //       })
-    //       .then(() => {
-    //         setInputData({name:"", email:"", password:""});
-    //       })
-    //       .catch((err) =>console.log(err));
-    
     
     
     

@@ -42,10 +42,7 @@ const Login = () => {
     //   const handleSubmit = (event) => {
     //     event.preventDefault();
     
-    //     if(!email || !password){
-    //       console.log("please fill the form")
-    //     }
-    //    
+    
     
    
     

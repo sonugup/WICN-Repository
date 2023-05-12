@@ -77,10 +77,7 @@ const Login = () => {
                   onChange={(event) => {
                     setPassword(event.target.value);
                   }}
-                  // onChange={hendlechenge}
-                  // onChange={(e) =>
-                  //   setInputData({ ...inputData, contact: e.target.value })
-                  // }
+                  
                 />
                 </div>
               

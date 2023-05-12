@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="navbar">
                 <img className='iwcn' src='iwcn.png' />
             
-                <Link className='link' component={Link} to={"/"}>
+                <Link className='link' component={Link} to={"/home"}>
                     <div>
                     <AiFillDashboard/>
                     DASHBOARD
@@ -53,7 +53,7 @@ const Navbar = () => {
                         STUDY MATERIAL
                     </div>
                 </Link>
-                <Link className='link' to={"/login"}>
+                <Link className='link' to={"/"}>
                     <div>
                         <FaUserAlt/>
                         LOGIN

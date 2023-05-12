@@ -8,51 +8,75 @@ import {RiLockPasswordLine} from "react-icons/ri"
 import {CiLogin} from "react-icons/ci"
 
 const Login = () => {
-    const [inputData, setInputData] = useState({
-        email: "",
-        password: ""
-        
-      });
-    
-      const { email, password} = inputData;
-      const navigate = useNavigate();
-    
-      const handleSubmit = (event) => {
-        event.preventDefault();
-    
-        if(!email || !password){
-          console.log("please fill the form")
-        }
-        else{
-          axios.post(`http://localhost:8081/api/post`, { 
-            email,
-            password
-          })
-          .then(() => {
-            setInputData({ email:"", password:""});
-          })
-          .catch((err) =>console.log(err));
-    
-          alert("success")
-          navigate("/home");
-        }
-    
-        
-      };
-    
-      const hendlechenge =(e) => {
-        const {name, value}=e.target;
-        setInputData({...inputData, [name]:value});
+
+  const [email, setEmail]=useState('')
+  const [password, setPassword]=useState('')
+
+  const navigate=useNavigate();
+  const handleClick=(event) => {
+    event.preventDefault();
+    axios.post(`http://localhost:8081/login`, {
+      Email:email,
+      Password:password
+    }).then((res) => {
+      console.log("user has been loged")
+      console.log(res.config.data)
+      if(res.data){
+        navigate("/");
       }
+      else{
+        navigate("/home");
+      }
+    })
+  }
+
+    // const [inputData, setInputData] = useState({
+    //     email: "",
+    //     password: ""
+        
+    //   });
+    
+    //   const { email, password} = inputData;
+    //   const navigate = useNavigate();
+    
+    //   const handleSubmit = (event) => {
+    //     event.preventDefault();
+    
+    //     if(!email || !password){
+    //       console.log("please fill the form")
+    //     }
+    //     else{
+    //       axios.post(`http://localhost:8081/api/post`, { 
+    //         email,
+    //         password
+    //       })
+    //       .then(() => {
+    //         setInputData({ email:"", password:""});
+    //       })
+    //       .catch((err) =>console.log(err));
+    
+    //       alert("success")
+    //       navigate("/home");
+    //     }
+    
+        
+    //   };
+    
+    //   const hendlechenge =(e) => {
+    //     const {name, value}=e.target;
+    //     setInputData({...inputData, [name]:value});
+    //   }
       return (
+        <div className='mainpage'>
         <div className="d-flext w-100 vh-100 justify-content-center align-items-center">
           
           <div className="w-50 shadow-lg h-100 mb-5 bg-secondary  text-dark bg-opacity-50 rounded border  text-white p-5">
             <h1> <FaUserAlt/> Welcome Back!</h1>
             <hr/>
-            <form onSubmit={handleSubmit}>
+            <form >
+            {/* onSubmit={handleSubmit} */}
               <div className="mb-3">
-                <label for="exampleInputEmail1" className="form-label">
+              <label for="exampleInputEmail1" className="form-label">
                     <MdEmail/>
                   Email address
                 </label>
@@ -61,22 +85,34 @@ const Login = () => {
                   className="form-control"
                   name="email"
                   aria-describedby="emailHelp"
-                  onChange={hendlechenge}
+                  onChange={(event) => {
+                    setEmail(event.target.value);
+                  }}
+                  // onChange={(e) =>
+                  //   setInputData({ ...inputData, email: e.target.value })
+                  // }
+                  // onChange={hendlechenge}
                 />
               </div>
+              
               <div className="mb-3">
-                <label className="form-label"> <RiLockPasswordLine/> Password</label>
+                <label className="form-label"><RiLockPasswordLine/> Password</label>
                 <input
                   type="password"
                   className="form-control"
                   name="password"
-                  onChange={hendlechenge}
-                  
+                  onChange={(event) => {
+                    setPassword(event.target.value);
+                  }}
+                  // onChange={hendlechenge}
+                  // onChange={(e) =>
+                  //   setInputData({ ...inputData, contact: e.target.value })
+                  // }
                 />
-              </div>
+                </div>
               
 
-              <button type="submit" className="btn  btn-success">
+              <button type="submit" onClick={handleClick} className="btn  btn-success">
                 Login <CiLogin/>
               </button> 
               <div className="mt-5 text-center bg-secondary p-3 text-dark bg-opacity-50 rounded text-white">
@@ -85,6 +121,7 @@ const Login = () => {
               
             </form>
           </div>
+        </div>
         </div>
       );
     };

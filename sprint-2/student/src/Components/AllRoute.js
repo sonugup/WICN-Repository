@@ -13,6 +13,7 @@ import Read from './Pages/Read';
 import MainPage from './MainPage';
 import Navbar from './Navbar';
 import Resistor from './Login/Resistor';
+import Login from './Login/Login';
 const AllRoute = () => {
   return (
     <div>
@@ -20,7 +21,7 @@ const AllRoute = () => {
       <Routes>
         <Route path="/" element={<MainPage />} />
       
-      
+        <Route path="/login" element={<Login />} />
         <Route path="/resistor" element={<Resistor />} />
         <Route path="/home" element={<Home />} />
         <Route path="/student" element={<Student />} />

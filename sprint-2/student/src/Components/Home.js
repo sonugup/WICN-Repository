@@ -41,7 +41,7 @@ const Home = () => {
   const records = data.slice(firstIndex, lastIndex);
   const npage = Math.ceil(data.length / recordsPerPage);
   const number = [...Array(npage + 1).keys()].slice(1);
-  console.log(data);
+  console.log(records);
 
   const prePage = () => {
     if (curPage !== firstIndex) {
@@ -142,7 +142,7 @@ console.log(data)
                       <th scope="col">CONTAICT NUMBER</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  {/* <tbody>
                     {records.map((d, i) => {
                       return (
                         <tr key={i} className="inboxin">
@@ -152,7 +152,7 @@ console.log(data)
                         </tr>
                       );
                     })}
-                  </tbody>
+                  </tbody> */}
                 </table>
                 <nav>
                   <ul className="pagination">

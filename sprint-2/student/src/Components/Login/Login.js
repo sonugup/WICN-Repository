@@ -45,15 +45,7 @@ const Login = () => {
     //     if(!email || !password){
     //       console.log("please fill the form")
     //     }
-    //     else{
-    //       axios.post(`http://localhost:8081/api/post`, { 
-    //         email,
-    //         password
-    //       })
-    //       .then(() => {
-    //         setInputData({ email:"", password:""});
-    //       })
-    //       .catch((err) =>console.log(err));
+    //    
     
    
     

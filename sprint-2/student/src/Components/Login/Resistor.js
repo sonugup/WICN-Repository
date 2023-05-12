@@ -29,8 +29,7 @@ const Resistor = () => {
     //     password: ""
     //   });
     
-    //   const {name, email, password} = inputData;
-    //   const navigate = useNavigate();
+   
     
   
     

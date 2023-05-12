@@ -24,13 +24,7 @@ const Resistor = () => {
     })
   }
     
-    
-   
-    
   
-    
-   
-    
     
     
       return (

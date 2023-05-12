@@ -36,8 +36,6 @@ const Login = () => {
         
     //   });
     
-    //   const { email, password} = inputData;
-    //   const navigate = useNavigate();
     
   
     

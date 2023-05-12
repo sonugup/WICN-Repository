@@ -55,12 +55,7 @@ const Login = () => {
     //       })
     //       .catch((err) =>console.log(err));
     
-    //       alert("success")
-    //       navigate("/home");
-    //     }
-    
-        
-    //   };
+   
     
     
       return (

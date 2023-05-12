@@ -35,10 +35,7 @@ const Resistor = () => {
     //   const handleSubmit = (event) => {
     //     event.preventDefault();
     
-    //     if(!name || !email || !password){
-    //       console.log("please fill the form")
-    //     }
-    //     else{
+    
    
     
     

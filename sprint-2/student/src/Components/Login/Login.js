@@ -39,9 +39,7 @@ const Login = () => {
     //   const { email, password} = inputData;
     //   const navigate = useNavigate();
     
-    //   const handleSubmit = (event) => {
-    //     event.preventDefault();
-    
+  
     
     
    

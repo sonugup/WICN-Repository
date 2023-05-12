@@ -30,14 +30,6 @@ const Login = () => {
     })
   }
 
-  
-    
-    
-  
-    
-    
-   
-    
     
       return (
         <div className='mainpage'>

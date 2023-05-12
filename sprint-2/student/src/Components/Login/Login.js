@@ -62,10 +62,7 @@ const Login = () => {
         
     //   };
     
-    //   const hendlechenge =(e) => {
-    //     const {name, value}=e.target;
-    //     setInputData({...inputData, [name]:value});
-    //   }
+    
       return (
         <div className='mainpage'>
         <div className="d-flext w-100 vh-100 justify-content-center align-items-center">

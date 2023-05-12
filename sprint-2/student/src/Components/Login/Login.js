@@ -61,10 +61,7 @@ const Login = () => {
                   onChange={(event) => {
                     setEmail(event.target.value);
                   }}
-                  // onChange={(e) =>
-                  //   setInputData({ ...inputData, email: e.target.value })
-                  // }
-                  // onChange={hendlechenge}
+                  
                 />
               </div>
               

@@ -34,6 +34,7 @@ const Login = () => {
     })
   }
 
+<<<<<<< HEAD
 
   useEffect(() => {
 
@@ -46,37 +47,9 @@ const Login = () => {
     //     password: "'''
         
     //   });
+=======
+>>>>>>> 754b15c4261b2b6218df0086ac84b93799985e55
     
-    //   const { email, password} = inputData;
-    //   const navigate = useNavigate();
-    
-    //   const handleSubmit = (event) => {
-    //     event.preventDefault();
-    
-    //     if(!email || !password){
-    //       console.log("please fill the form")
-    //     }
-    //     else{
-    //       axios.post(`http://localhost:8081/api/post`, { 
-    //         email,
-    //         password
-    //       })
-    //       .then(() => {
-    //         setInputData({ email:"", password:""});
-    //       })
-    //       .catch((err) =>console.log(err));
-    
-    //       alert("success")
-    //       navigate("/home");
-    //     }
-    
-        
-    //   };
-    
-    //   const hendlechenge =(e) => {
-    //     const {name, value}=e.target;
-    //     setInputData({...inputData, [name]:value});
-    //   }
       return (
         <div className='mainpage'>
         <div className="d-flext w-100 vh-100 justify-content-center align-items-center">
@@ -99,10 +72,7 @@ const Login = () => {
                   onChange={(event) => {
                     setEmail(event.target.value);
                   }}
-                  // onChange={(e) =>
-                  //   setInputData({ ...inputData, email: e.target.value })
-                  // }
-                  // onChange={hendlechenge}
+                  
                 />
               </div>
               
@@ -115,10 +85,7 @@ const Login = () => {
                   onChange={(event) => {
                     setPassword(event.target.value);
                   }}
-                  // onChange={hendlechenge}
-                  // onChange={(e) =>
-                  //   setInputData({ ...inputData, contact: e.target.value })
-                  // }
+                  
                 />
                 </div>
               

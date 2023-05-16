@@ -23,43 +23,10 @@ const Resistor = () => {
       console.log(res)
     })
   }
-    // const [inputData, setInputData] = useState({
-    //     email: "",
-    //     name: "",
-    //     password: ""
-    //   });
     
-    //   const {name, email, password} = inputData;
-    //   const navigate = useNavigate();
+  
     
-    //   const handleSubmit = (event) => {
-    //     event.preventDefault();
     
-    //     if(!name || !email || !password){
-    //       console.log("please fill the form")
-    //     }
-    //     else{
-    //       axios.post(`http://localhost:8081/register`, {
-    //         name, 
-    //         email, 
-    //         password,
-    //       })
-    //       .then(() => {
-    //         setInputData({name:"", email:"", password:""});
-    //       })
-    //       .catch((err) =>console.log(err));
-    
-    //       alert("success")
-    //       navigate("/student");
-    //     }
-    
-       
-    //   };
-    
-    //   const hendlechenge =(e) => {
-    //     const {name, value}=e.target;
-    //     setInputData({...inputData, [name]:value});
-    //   }
       return (
         <div className='mainpage'>
         <div className="d-flext w-100 vh-100 justify-content-center align-items-center">
@@ -114,10 +81,7 @@ const Resistor = () => {
                   onChange={(event) => {
                     setPassword(event.target.value);
                   }}
-                  // onChange={hendlechenge}
-                  // onChange={(e) =>
-                  //   setInputData({ ...inputData, contact: e.target.value })
-                  // }
+                  
                 />
               </div>
               

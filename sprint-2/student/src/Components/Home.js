@@ -7,6 +7,7 @@ import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { GiStarKey } from "react-icons/gi";
 import { FaUsersSlash } from "react-icons/fa";
 import { BiCircle } from "react-icons/bi";
+import PieChart from "./Pages/PieChart";
 // import {
 //   Chart as ChartJS,
 //   CategoryScale,
@@ -142,7 +143,7 @@ console.log(data)
                       <th scope="col">CONTAICT NUMBER</th>
                     </tr>
                   </thead>
-                  {/* <tbody>
+                  <tbody>
                     {records.map((d, i) => {
                       return (
                         <tr key={i} className="inboxin">
@@ -152,7 +153,7 @@ console.log(data)
                         </tr>
                       );
                     })}
-                  </tbody> */}
+                  </tbody>
                 </table>
                 <nav>
                   <ul className="pagination">
@@ -191,7 +192,7 @@ console.log(data)
           <div className="secbox">
           
             <p>Revenue nan% from last month</p>
-            {/* <ChartData/> */}
+            <PieChart/>
           </div>
         </div>
       </div>

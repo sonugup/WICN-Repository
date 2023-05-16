@@ -14,6 +14,8 @@ import MainPage from './MainPage';
 import Navbar from './Navbar';
 import Resistor from './Login/Resistor';
 import Login from './Login/Login';
+import AddQuiz from "./Pages/AddQuiz"
+import AddQues from './Pages/AddQues';
 const AllRoute = () => {
   return (
     <div>
@@ -27,7 +29,9 @@ const AllRoute = () => {
         <Route path="/student" element={<Student />} />
         <Route path="/result" element={<Result />} />
         <Route path="/questions" element={<Questions />} />
+        <Route path="/addQues" element={<AddQues />} />
         <Route path="/quizs" element={<Quizs />} />
+        <Route path="/addQuiz" element={<AddQuiz />} />
         <Route path="/studyMaterial" element={<StudyMaterial />} />
         <Route path="/create" element={<Create />} />
         <Route path="/update/:id" element={<Update />} />

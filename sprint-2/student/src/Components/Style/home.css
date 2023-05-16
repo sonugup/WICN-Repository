@@ -29,7 +29,7 @@ body{
     margin:0 auto;
 }
 .navbox div{
-    padding: 32px 10px;
+    padding: 30px 10px;
     width: 100%;
     border-radius: 5px;
     color: white;
@@ -68,6 +68,18 @@ body{
     font-size: 20px;
     text-decoration: none;
     color: white;
+}
+.link2{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+.quizs{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 .recen{
     display: flex;

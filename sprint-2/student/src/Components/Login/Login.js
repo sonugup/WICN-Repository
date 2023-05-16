@@ -1,6 +1,6 @@
 
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {FaUserAlt} from "react-icons/fa"
 import {MdEmail} from "react-icons/md"
@@ -12,7 +12,10 @@ const Login = () => {
   const [email, setEmail]=useState('')
   const [password, setPassword]=useState('')
 
+
   const navigate=useNavigate();
+  // const [loginStatus, setLoginStatus]=useState()
+  // const [StatusHolder, setStatusHolder]=useState('message')
   const handleClick=(event) => {
     event.preventDefault();
     axios.post(`http://localhost:8081/login`, {
@@ -21,7 +24,8 @@ const Login = () => {
     }).then((res) => {
       console.log("user has been loged")
       console.log(res.config.data)
-      if(res.data){
+      if(res.data.message){
+        console.log(res.data.message)
         navigate("/");
       }
       else{
@@ -30,9 +34,16 @@ const Login = () => {
     })
   }
 
+
+  useEffect(() => {
+
+  })
+
+
+
     // const [inputData, setInputData] = useState({
     //     email: "",
-    //     password: ""
+    //     password: "'''
         
     //   });
     

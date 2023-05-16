@@ -19,7 +19,7 @@ const db=mysql.createConnection({
 
 app.get('/register', (req, res) => {
 
-    res.send("Hi")
+    // res.send("Hi")
    const sql= "INSERT INTO user_login (`username`, `Email`, `password` ) VALUES ('john2', 'john2@gmail.com',  'react2.js')";
    db.query(sql, (error, result) => {
        console.log("error", error);
@@ -58,7 +58,7 @@ app.post("/login", (req, res) => {
     const sentPassword = req.body.Password
     // const {sentUserName, sentEmail, sentPassword} = req.body
 
-    const sql="SELECT * FROM  user_login WHERE sentEmail = ? && sentPassword = ?"
+    const sql="SELECT * FROM  user_login WHERE Email = ? && Password = ?"
 
     const Values=[ sentEmail, sentPassword]
 

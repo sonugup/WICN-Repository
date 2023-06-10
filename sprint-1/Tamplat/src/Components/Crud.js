@@ -96,7 +96,6 @@ function EditList({ cur, lists, setLists }) {
   return (
     <div className="editbox">
       <p>
-        {" "}
         <input
           type="text"
           name="section"
